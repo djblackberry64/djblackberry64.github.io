@@ -6,3 +6,4 @@ categories: jekyll test
 ---
 
 This is a test post rendered with a custom layout.
+Hello.
