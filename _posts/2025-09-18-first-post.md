@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Hello — custom theme"
-date: 2025-09-18 11:00:00 +0200
-categories: [meta, jekyll]
+title: "Mein erster Beitrag"
+date: 2025-09-19
+categories: jekyll test
 ---
 
 This is a test post rendered with a custom layout.
