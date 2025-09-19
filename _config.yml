@@ -1,0 +1,6 @@
+title: "My Blog"
+description: "Notes about coding, books, and other marginalia"
+baseurl: "" # empty for user site, or "/repo-name" for project page
+url: "https://your-username.github.io"
+theme: jekyll-theme-minimal
+markdown: kramdown
