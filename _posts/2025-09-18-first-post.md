@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mein erster Beitrag"
+title: "first-post"
 date: 2025-09-19
 categories: jekyll test
 ---
