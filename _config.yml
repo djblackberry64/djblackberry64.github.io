@@ -1,6 +1,9 @@
 title: "My Blog"
-description: "Notes about coding, books, and other marginalia"
-baseurl: "" # empty for user site, or "/repo-name" for project page
+description: "Rants, notes, and dev experiments"
 url: "https://your-username.github.io"
-theme: jekyll-theme-minimal
+baseurl: "" # set to "/repo-name" if not a user site
 markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+author:
+  name: "djblackberry64"
+  email: "not given"
