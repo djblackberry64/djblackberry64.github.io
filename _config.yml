@@ -1,6 +1,6 @@
 title: "My Blog"
 description: "Rants, notes, and dev experiments"
-url: "https://your-username.github.io"
+url: "https://djblackberry64.github.io"
 baseurl: "" # set to "/repo-name" if not a user site
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
