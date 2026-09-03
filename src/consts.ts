@@ -86,4 +86,10 @@ export const SOCIALS: Socials = [
     TEXT: "lempire-discord",
     HREF: "https://discord.gg/h24Szhf2tN",
   },
+  {
+    NAME: "Ko-Fi",
+    ICON: "kofi",
+    TEXT: "Support me on financially Ko-Fi",
+    HREF: "https://ko-fi.com/djblackberry64",
+  },
 ];
