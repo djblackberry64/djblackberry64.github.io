@@ -22,6 +22,27 @@ const next = items[(index + 1) % items.length];
   <article>
     <Content />
   </article>
+  {
+    collection === "blog" && (
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="djblackberry64/djblackberry64.github.io"
+        data-repo-id="R_kgDOUJFvVA"
+        data-category="General"
+        data-category-id="DIC_kwDOUJFvVM4DE0yY"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async
+      />
+    )
+  }
+  <br />
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <a
       href={`/${prev.collection}/${prev.slug}`}
@@ -99,3 +120,35 @@ const next = items[(index + 1) % items.length];
     </a>
   </div>
 </div>
+<!--Mental Note: This is an AI generated functionality, go back to this and disect it, the other code is hand written or just an integraton like with Giscus -->
+<script>
+  function updateGiscusTheme() {
+    const isDark = document.documentElement.classList.contains("dark");
+    const theme = isDark ? "dark" : "light";
+
+    const iframe = document.querySelector<HTMLIFrameElement>(
+      "iframe.giscus-frame",
+    );
+    if (!iframe || !iframe.contentWindow) return;
+
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme } } },
+      "https://giscus.app",
+    );
+  }
+
+  // Synchronize as soon as the user utilizes the toggle
+  const observer = new MutationObserver(() => updateGiscusTheme());
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
+
+  // First time Initilization
+  window.addEventListener("message", (event) => {
+    if (event.origin !== "https://giscus.app") return;
+    if (!(typeof event.data === "object" && event.data.giscus)) return;
+    updateGiscusTheme();
+  });
+</script>
+<!--End of AI generated section -->
