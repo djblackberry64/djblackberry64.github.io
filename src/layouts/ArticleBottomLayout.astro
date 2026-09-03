@@ -16,14 +16,16 @@ const items = (await getCollection(collection))
 const index = items.findIndex((x) => x.slug === entry.slug);
 const prev = items[(index - 1 + items.length) % items.length];
 const next = items[(index + 1) % items.length];
+let preparedValue = collection === "blog" || collection === "projects";
 ---
 
 <div>
   <article>
     <Content />
   </article>
+  <!-- Mental Note: Like with your Astro Starlight project Components you can have conditional stuff-->
   {
-    collection === "blog" && (
+    preparedValue && (
       <script
         src="https://giscus.app/client.js"
         data-repo="djblackberry64/djblackberry64.github.io"
@@ -42,6 +44,7 @@ const next = items[(index + 1) % items.length];
       />
     )
   }
+  <!-- Mental note: Like with the collection filter you can filter based on the collection the theme provides (which you can also extend), remember this for next time so you don't have to get a reminder from AI that you can customize this -->
   <br />
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <a
