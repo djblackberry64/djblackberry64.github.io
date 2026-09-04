@@ -39,7 +39,7 @@ html.dark {
 html,
 body {
   @apply h-full w-full antialiased;
-  @apply bg-slate-50 dark:bg-slate-950;
+  @apply bg-slate-100 dark:bg-slate-950;
   @apply text-black/75 dark:text-white/75;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 main {
-  @apply flex flex-col flex-1 bg-white dark:bg-black;
+  @apply flex flex-col flex-1 bg-slate-100 dark:bg-slate-950;
 }
 
 header {
@@ -61,7 +61,7 @@ header:not(.scrolled) {
 }
 
 header.scrolled {
-  @apply bg-white/75 dark:bg-black/50;
+  @apply bg-slate-100 dark:bg-slate-950;
   @apply border-black/10 dark:border-white/25;
   @apply backdrop-blur-sm saturate-200;
 }
