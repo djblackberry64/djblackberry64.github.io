@@ -9,7 +9,7 @@ export default defineConfig({
   site: "https://djblackberry64.github.io",
   integrations: [
     mdx(),
-    sitemap(),
+    // sitemap(),
     solidJs(),
     tailwind({ applyBaseStyles: false }),
   ],
