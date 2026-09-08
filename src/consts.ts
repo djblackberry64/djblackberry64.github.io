@@ -89,7 +89,7 @@ export const SOCIALS: Socials = [
   {
     NAME: "Ko-Fi",
     ICON: "kofi",
-    TEXT: "Support me on financially Ko-Fi",
+    TEXT: "Support me financially on Ko-Fi",
     HREF: "https://ko-fi.com/djblackberry64",
   },
 ];

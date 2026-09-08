@@ -7,10 +7,14 @@ tags:
   - Personal
 ---
 
+import { Image } from "astro:assets";
+import cicada from "./cicada-image.jpg";
+
 Hello and welcome to my first blog post on here!
 I'm glad you got this far, as a reviewer of this blog project or just as a person that stumbled upon this on the internet. This is my blog!
 
-<!--<img src="./cicada-image.jpg" alt="Brown cicada" loading="eager"><br/>-->
+<Image src={cicada} alt="Brown cicada" loading="eager"></Image>
+<br />
 
 ![Brown cicada](cicada-image.jpg)
 
