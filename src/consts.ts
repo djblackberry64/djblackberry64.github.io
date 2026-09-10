@@ -6,6 +6,8 @@ export const SITE: Site = {
   DESCRIPTION:
     "Welcome to the Djblackberry64 WIP blog, where I keep you updated and share my opinion and insights.",
   AUTHOR: "Djblackberry64",
+  NUM_POSTS_ON_HOMEPAGE: 3,
+  NUM_PROJECTS_ON_HOMEPAGE: 1,
 };
 
 // Work Page
