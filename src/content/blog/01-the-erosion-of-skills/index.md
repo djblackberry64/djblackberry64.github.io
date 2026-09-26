@@ -9,10 +9,12 @@ tags:
 ---
 
 As you might have noticed, AI is a very controversial topic.
-Some love it, some hate it, some think it will bring hell upon us...
+Some love it, some hate it, some think it will bring hell upon us...😬
+
 To be honest, AI existed before all these LLM (Large Language Models) shenanigans.
 But do you know, what is different now than in the early stages of AI?
-AI is more than ever used to replace foundational skills I think every human should master to at least a mid-level degree.
+
+_AI is more than ever used to replace foundational skills I think every human should master to at least a mid-level degree._
 
 Otherwise, I think you'd really struggle in your professional and even your personal life.
 
