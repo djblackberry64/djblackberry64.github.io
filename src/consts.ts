@@ -75,13 +75,13 @@ export const SOCIALS: Socials = [
     TEXT: "markhorn-dev",
     HREF: "https://www.linkedin.com/in/markhorn-dev/",
   },*/
-  /*
+
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
-  },*/
+    TEXT: "djblackberry64",
+    HREF: "https://x.com/djblackberry64",
+  },
   {
     NAME: "Discord",
     ICON: "discord",
