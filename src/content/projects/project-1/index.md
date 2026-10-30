@@ -1,16 +1,13 @@
 ---
-title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 18 2022"
+title: "Programming Fundamentals Course"
+summary: "A course for teaching language-independent programming fundamentals"
+date: "Oct 30 2026"
 draft: false
 tags:
-- Astro
-- Javascript
-- Typescript
-- Tailwind
-- SolidJs
-demoUrl: https://astro-sphere-demo.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
+  - Astro
+  - Learning
+demoUrl: https://djblackberry64.github.io/programming-fundamentals-course/
+repoUrl: https://github.com/djblackberry64/programming-fundamentals-course
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+The motivation behind this project was to first make a reference for myself. After some thought though, I got the idea to share this with the world. "If even one person finds this helpful, this venture wouldn't be for nothing", I said to myself. That's how this project came to be. I went from MkDocs to Astro Starlight now but the underlying thing that was driving me to create never changed. If you wanna know more about the reasoning behind this project, please check out the README.md on its GitHub repo as it describes the whole ordeal in even more detail than I do here.
