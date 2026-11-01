@@ -23,8 +23,9 @@ const next = items[(index + 1) % items.length];
     <Content />
   </article>
   <!-- Mental Note: Like with your Astro Starlight project Components you can have conditional stuff-->
+  <!-- Realization: I don't need conditional stuff here because the provided Props definition already filters how I want! -->
   {
-    (
+    entry && (
       <script
         src="https://giscus.app/client.js"
         data-repo="djblackberry64/djblackberry64.github.io"
