@@ -16,7 +16,6 @@ const items = (await getCollection(collection))
 const index = items.findIndex((x) => x.slug === entry.slug);
 const prev = items[(index - 1 + items.length) % items.length];
 const next = items[(index + 1) % items.length];
-let preparedValue = collection === "blog" || collection === "projects";
 ---
 
 <div>
@@ -25,7 +24,7 @@ let preparedValue = collection === "blog" || collection === "projects";
   </article>
   <!-- Mental Note: Like with your Astro Starlight project Components you can have conditional stuff-->
   {
-    preparedValue && (
+    (
       <script
         src="https://giscus.app/client.js"
         data-repo="djblackberry64/djblackberry64.github.io"
@@ -124,35 +123,4 @@ let preparedValue = collection === "blog" || collection === "projects";
     </a>
   </div>
 </div>
-<!--Mental Note: This is an AI generated functionality, go back to this and disect it, the other code is hand written or just an integraton like with Giscus -->
-<script>
-  function updateGiscusTheme() {
-    const isDark = document.documentElement.classList.contains("dark");
-    const theme = isDark ? "dark" : "light";
-
-    const iframe = document.querySelector<HTMLIFrameElement>(
-      "iframe.giscus-frame",
-    );
-    if (!iframe || !iframe.contentWindow) return;
-
-    iframe.contentWindow.postMessage(
-      { giscus: { setConfig: { theme } } },
-      "https://giscus.app",
-    );
-  }
-
-  // Synchronize as soon as the user utilizes the toggle
-  const observer = new MutationObserver(() => updateGiscusTheme());
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ["class"],
-  });
-
-  // First time Initilization
-  window.addEventListener("message", (event) => {
-    if (event.origin !== "https://giscus.app") return;
-    if (!(typeof event.data === "object" && event.data.giscus)) return;
-    updateGiscusTheme();
-  });
-</script>
-<!--End of AI generated section -->
+<!--Mental Note: Theme switching for Giscus should be self-implemented, the main page will have the AI-code deleted until you figure this out yourself. Mental breadcrumbs: Sending to giscus, w3schools.com(event listener, querySelector)-->
