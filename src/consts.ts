@@ -8,6 +8,7 @@ export const SITE: Site = {
   AUTHOR: "Djblackberry64",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 1,
+  NUM_WORKPLACES_ON_HOMEPAGE: 1,
 };
 
 // Work Page

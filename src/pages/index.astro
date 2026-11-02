@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
+import ArrowCardWork from "@components/ArrowCardWork"
 import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
@@ -16,6 +17,8 @@ const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE)
+
+const employers = (await getCollection("work")).filter(workplace => workplace.data.listed).sort((a, b) => b.data.dateStart.getTime() - a.data.dateStart.getTime()).slice(0, SITE.NUM_WORKPLACES_ON_HOMEPAGE)
 
 const stack = [
   { 
@@ -180,6 +183,31 @@ const stack = [
                 <ArrowCard entry={project} />
               </li>
             ))}
+          </ul>
+        </div>
+      </section>
+
+      <!-- Custom Work Preview Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent employers
+            </p>
+            <a href="/work" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All employers
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {employers.map((workplace) => (
+              <li>
+                <ArrowCardWork entry={workplace}/>
+              </li>
+            ))}
+            {employers.length === 0 && 
+            <p>No employers listed</p>}
           </ul>
         </div>
       </section>
